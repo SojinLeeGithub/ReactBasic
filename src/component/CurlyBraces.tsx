@@ -1,6 +1,6 @@
 import React from "react";
 
-// 자동정렬 (ctr+a, c+c, c+f)
+// 자동정렬 (ctrl+a, ctrl+k, ctrl+f)
 
 export default function CurlyBraces() {
     // Curly Braces:
