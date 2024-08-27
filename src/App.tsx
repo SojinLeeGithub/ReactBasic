@@ -8,6 +8,7 @@ import ListRender from './component_manage/ListRender';
 import EventComponent from './interection/EventComponent';
 import StateComponent from './interection/StateComponent';
 import ForwordingComponent from './interection/ForwordingComponent';
+import HookComponent1 from './hook/HookComponent1';
 
 // import './App.css';
 
@@ -21,7 +22,8 @@ function App() {
       {/* <ListRender /> */}
       {/* <EventComponent /> */}
       {/* <StateComponent /> */}
-      <ForwordingComponent />
+      {/* <ForwordingComponent /> */}
+      <HookComponent1 />
 
     
     </>
