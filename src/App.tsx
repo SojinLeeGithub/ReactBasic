@@ -9,6 +9,8 @@ import EventComponent from './interection/EventComponent';
 import StateComponent from './interection/StateComponent';
 import ForwordingComponent from './interection/ForwordingComponent';
 import HookComponent1 from './hook/HookComponent1';
+import HookComponent2 from './hook/HookComponent2';
+import CustomHook from './hook/CustomHook';
 
 // import './App.css';
 
@@ -23,8 +25,10 @@ function App() {
       {/* <EventComponent /> */}
       {/* <StateComponent /> */}
       {/* <ForwordingComponent /> */}
-      <HookComponent1 />
-
+      {/* <HookComponent1 /> */}
+      {/* <HookComponent2/> */}
+      <CustomHook />
+  
     
     </>
    
