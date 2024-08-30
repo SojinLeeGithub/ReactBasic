@@ -15,6 +15,7 @@ import { Outlet, Route, Routes, useLocation, useParams } from 'react-router';
 import QueryString from './router/QueryString';
 import PathVariable from './router/PathVariable';
 import PathMove from './router/PathMove';
+import Zustand from './zustand/Zustand';
 
 // react-router 패키지:
 // - react의 SPA(Single Page Application)에서 라우팅을 구현하기 위한 라이브러리
@@ -43,17 +44,14 @@ function Layout() {
   // e.g f12 에서 콘솔창 -> pathname: component 라고 주소이름이 뜬다.
   // pathname : 현재 path 속성값을 알려준다.
 
-  // const { name } = pathName();
-
-  const location = useLocation();
-  console.log(location);
+   const { pathname } = useLocation();
 
 
   // <Outlet/> : 부모 <Route>에 해당 컴포넌트가 element로 등록 되었을 때 
   //             자식 <Route>의 element가 해당 위치에 렌더링 되도록 하는 컴포넌트
     return (
       <div>
-          <div style={{height: '100px', backgroundColor: 'aquamarine'}}></div>
+          <div style={{height: '100px', backgroundColor: 'aquamarine'}}>{pathname}</div>
           <Outlet />
           <div style={{height: '100px', backgroundColor: 'purple'}}></div>
       </div>
@@ -77,6 +75,7 @@ function App() {
           <Route path='path-variable/:name' element={<PathVariable/>}/>
           <Route path='path-move' element={<PathMove />}/>
       </Route>
+      <Route path='/zustand' element={<Zustand/>} />
       <Route path='*' element={<h1>404!!!</h1>} />
 
 
